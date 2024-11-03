@@ -1,0 +1,7 @@
+.welcome-image {
+    float: left;
+    max-width: 30%; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 20px; /* Adds space between image and text */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
