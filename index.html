@@ -293,7 +293,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-	<script>
+	<!-- <script>
 		var d = new Date(new Date("December 29, 2025 19:30:00").getTime());
 		// default example
 		simplyCountdown('.simply-countdown-one', {
@@ -309,7 +309,21 @@
 			day: d.getDate(),
 			enableUtc: false
 		});
-	</script>
+	</script> -->
+
+		<script>
+  var d = new Date("December 29, 2025 19:30:00"); // 7:30 PM IST
+
+  simplyCountdown('.simply-countdown-one', {
+    year: d.getFullYear(),
+    month: d.getMonth() + 1,
+    day: d.getDate(),
+    hours: d.getHours(),
+    minutes: d.getMinutes(),
+    seconds: d.getSeconds(),
+    enableUtc: false   // VERY IMPORTANT for India time
+  });
+</script>
 
 	</body>
 </html>
